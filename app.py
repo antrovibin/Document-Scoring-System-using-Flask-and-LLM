@@ -8,7 +8,7 @@ app = Flask(__name__)
 UPLOAD_FOLDER = 'uploads'
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
-MODEL_API_URL = 'http://192.168.27.106:1234/v1/completions'  # Change this to your model API URL
+MODEL_API_URL = 'http://193:1234/v1/completions'  # Change this to your model API URL
 
 def get_text_from_docx(filepath):
     doc = Document(filepath)
